@@ -1,0 +1,12 @@
+@use 'variables';
+
+@use 'Nav';
+@use 'Card';
+@use 'Home';
+
+
+.App{
+    background-color: variables.$FondoOscuro;
+    height: 100vh;
+    width: 100%;
+}
