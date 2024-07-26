@@ -1,11 +1,76 @@
 @use 'variables';
 
 .Card {
+    display: flex;
+    flex-direction: column;
     color: variables.$LetrasBlancas;
-    width: 90%;
-    margin: auto;
+    width: 80%;
+    margin: 35px 20px;
+    padding: 10px 10px 10px 0;
     border-radius: 15px;
     background-color: variables.$FondoCard;
     text-align: center;
     align-items: center;
+    border: 1px solid variables.$Blanco;
+
+
+    & .image {
+        width: 60%;
+        height: vh;
+        margin: 10px auto;
+        border: 1px solid variables.$Blanco;
+        border-radius: 50%;
+        box-shadow: 0px 8px 10px white;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+
+        }
+
+    }
+
+    & .descripcion-perfil {
+        margin: 10px 10px;
+    }
+
+    & .contactos {
+        margin: 10px 10px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+        & .icon {
+            border: 1px solid variables.$Blanco;
+            padding: 10px 11px;
+            margin: 20px;
+            font-size: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 3px variables.$Blanco;
+
+            & a {
+                color: variables.$Blanco;
+                text-decoration: none;
+            }
+
+            &:hover {
+                background-color: variables.$FondoNav;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 30px) and (max-width: 564px) {
+    .Card {
+        color: variables.$LetrasBlancas;
+        width: 90%;
+        margin: 30px auto;
+        padding: 10px 10px 10px 0;
+        border-radius: 15px;
+        background-color: variables.$FondoCard;
+        text-align: center;
+        align-items: center;
+        border: 1px solid variables.$Blanco;
+    }
 }

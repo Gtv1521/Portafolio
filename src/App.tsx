@@ -1,5 +1,3 @@
-import React from 'react';
-import logo from './logo.svg';
 import './Styles/Index.scss';
 import RoutesApp from './Components/RoutesApp';
 

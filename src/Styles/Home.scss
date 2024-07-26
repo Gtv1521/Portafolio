@@ -1,5 +1,28 @@
 @use 'variables';
 
-.profile{
-    width: 30%;
+.contenedor-home {
+    width: 100%;
+    overflow: auto;
+}
+
+.profile {
+    width: 40%;
+    height: 80vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 30px auto;
+
+}
+
+@media screen and (min-width: 30px) and (max-width: 564px) {
+    .profile {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 565px) and (max-width: 980px) {
+    .profile {
+        width: 70%;
+    }
 }
