@@ -3,26 +3,105 @@
 .contenedor-home {
     width: 100%;
     overflow: auto;
+    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExenl5azhyMmhmNmg1YXJuejV5ZXBtY2JwcnRtaHFmOTJ6MWw4dDRjNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BW51OCstarPBm/giphy.webp");
 }
 
 .profile {
     width: 40%;
-    height: 80vh;
+    height: 87vh;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
     padding: 30px auto;
 
+    & .contenido {
+        background-color: variables.$Azul;
+        box-shadow: 5px 4px 10px 5px variables.$Blanco;
+        padding: 30px 90px;
+        font-size: 30px;
+        color: variables.$Blanco;
+        font-weight: 900;
+        width: 98%;
+        // font-family:Georgia, 'Times New Roman', Times, serif;
+        border-radius: 20px;
+
+        & .title {
+            text-shadow: 3px 3px 20px variables.$Blanco;
+            font-size: 50px;
+        }
+
+        & .inicio {
+            margin: 15px auto 0 auto;
+            border-radius: 10px;
+            width: 30%;
+            padding: 10px;
+            background-color: variables.$FondoNav;
+
+            &:hover {
+                background-color: none !important;
+                box-shadow: 1px 1px 5px variables.$Rojo;
+            }
+
+            & a {
+                color: variables.$Blanco;
+                text-decoration: none;
+
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 30px) and (max-width: 564px) {
     .profile {
-        width: 100%;
+        width: 95%;
+
+        & .contenido {
+            width: 98%;
+            padding: 10px 0;
+
+            & .title {
+                font-size: 30px;
+                padding: 0;
+            }
+
+            & .descrition {
+                font-size: 25px;
+            }
+
+            & .inicio {
+                & a {
+                    font-size: 25px;
+                }
+            }
+        }
     }
 }
-@media screen and (min-width: 565px) and (max-width: 980px) {
+
+@media screen and (min-width: 565px) and (max-width: 1024px) {
     .profile {
-        width: 70%;
+        width: 95%;
+
+        & .contenido {
+            width: 60%;
+            padding: 10px 0;
+
+            & .title {
+                font-size: 30px;
+                padding: 0;
+            }
+
+            & .descrition {
+                font-size: 25px;
+            }
+
+            & .inicio {
+                & a {
+                    font-size: 25px;
+                }
+            }
+        }
     }
 }

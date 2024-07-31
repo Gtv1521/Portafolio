@@ -3,9 +3,9 @@
 .content-navbar {
     display: flex;
     justify-content: space-around;
-    background-color: variables.$FondoNav;
-    box-shadow: 2px 5px 12px variables.$Blanco;
-    border-radius: 10px;
+    background-color: variables.$FondoCard;
+    box-shadow: 2px 1px 8px variables.$Blanco;
+    // border-radius: 10px;
 
     & .nav-menu ul {
         display: flex;
